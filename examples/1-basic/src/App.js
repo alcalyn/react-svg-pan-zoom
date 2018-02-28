@@ -14,6 +14,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <div id="debug"></div>
         <button className="btn" onClick={event => this.Viewer.zoomOnViewerCenter(1.1)}>Zoom in</button>
         <button className="btn" onClick={event => this.Viewer.fitSelection(40, 40, 200, 200)}>Zoom area 200x200</button>
         <button className="btn" onClick={event => this.Viewer.fitToViewer()}>Fit</button>
@@ -21,6 +22,7 @@ class App extends Component {
         <hr/>
 
         <ReactSVGPanZoom
+          tool={'auto'}
           style={{border: "1px solid black"}}
           width={500} height={500} ref={Viewer => this.Viewer = Viewer}
           onClick={event => console.log('click', event.x, event.y, event.originalEvent)}
@@ -30,7 +32,7 @@ class App extends Component {
 
           <svg width={617} height={316}>
 
-            <g fillOpacity=".5" strokeWidth="4">
+            <g fillOpacity=".5" strokeWidth="4" onClick={ () => document.querySelector('#debug').innerText += 'CLICK ' }>
               <rect x="400" y="40" width="100" height="200" fill="#4286f4" stroke="#f4f142"/>
               <circle cx="108" cy="108.5" r="100" fill="#0ff" stroke="#0ff"/>
               <circle cx="180" cy="209.5" r="100" fill="#ff0" stroke="#ff0"/>
