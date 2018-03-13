@@ -16,7 +16,7 @@
     "build-umd": "cross-env BABEL_ENV=es webpack",
     "build-storybook": "cross-env BABEL_ENV=commonjs build-storybook -s storybook/public -c storybook -o ${PWD}/build-storybook",
     "customize-storybook": "node ./storybook/scripts/customize-storybook",
-    "build": "npm-run-all clean build-storybook customize-storybook build-commonjs build-es build-umd build-umd-min",
+    "build": "npm-run-all clean build-commonjs build-es build-umd build-umd-min",
     "clean": "del build-*",
     "website-update": "gh-pages -m 'Update gh-pages' -d ./build-storybook",
     "version": "npm run build",
