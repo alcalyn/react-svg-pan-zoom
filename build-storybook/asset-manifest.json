@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/react-svg-pan-zoom/main.52ad199666a94a718bfd.bundle.js",
+    "main.js.map": "/react-svg-pan-zoom/main.52ad199666a94a718bfd.bundle.js.map",
+    "runtime~main.js": "/react-svg-pan-zoom/runtime~main.52ad199666a94a718bfd.bundle.js",
+    "runtime~main.js.map": "/react-svg-pan-zoom/runtime~main.52ad199666a94a718bfd.bundle.js.map",
+    "vendors~main.js": "/react-svg-pan-zoom/vendors~main.52ad199666a94a718bfd.bundle.js",
+    "vendors~main.js.map": "/react-svg-pan-zoom/vendors~main.52ad199666a94a718bfd.bundle.js.map",
+    "iframe.html": "/react-svg-pan-zoom/iframe.html",
+    "precache-manifest.f1ea373ca086a18bd67f1f08c18c6717.js": "/react-svg-pan-zoom/precache-manifest.f1ea373ca086a18bd67f1f08c18c6717.js",
+    "service-worker.js": "/react-svg-pan-zoom/service-worker.js"
+  },
+  "entrypoints": [
+    "runtime~main.52ad199666a94a718bfd.bundle.js",
+    "vendors~main.52ad199666a94a718bfd.bundle.js",
+    "main.52ad199666a94a718bfd.bundle.js"
+  ]
+}
